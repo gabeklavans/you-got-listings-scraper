@@ -9,16 +9,9 @@
   background-color: rgb(216, 216, 246);
 }
 
-#main-header {
-  /* text-align: center; */
-}
-
 #listings {
   display: flex;
   flex-direction: column;
-}
-
-.price {
 }
 
 .address {
@@ -32,4 +25,19 @@
 
 input {
   padding: 2px;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+form {
+  display: grid;
+  width: fit-content;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+}
+
+form>* {
+  margin: 10px 0 0 10px;
 }
